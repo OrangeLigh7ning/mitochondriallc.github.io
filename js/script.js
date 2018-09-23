@@ -43,7 +43,7 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 	});
 
 
-	triggerBttn.addEventListener( 'click', toggleOverlay );
+	//triggerBttn.addEventListener( 'click', toggleOverlay );
 	closeBttn.addEventListener( 'click', toggleOverlay );
 })();
 

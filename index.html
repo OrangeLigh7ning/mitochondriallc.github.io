@@ -35,14 +35,17 @@
                 <div class="navigation" id="navigation-scroll">
                         <div class="row">
                             <div class="col-md-11 col-xs-10">
-                                <a href="index.html"><span id="logo"><strong class="strong">P</strong>eer Assistant</span></a>
+                                <a href="index.html">
+                                	<span id="logo" class="hidden-xs"><strong class="strong">P</strong>eerAssistant</span>
+                                	<span id="logo" style="font-size:3rem;" class="visible-xs"><strong class="strong">P</strong>eerAssistant</span>
+                                </a>
                             </div>
                             <div class="col-md-1 col-xs-2">
-                                <p class="nav-button">
+                               <!--  <p class="nav-button">
                                     <button id="trigger-overlay" type="button">
                                     <i class="fa fa-bars"></i>
                                     </button>
-                                </p>
+                                </p> -->
                             </div>
                         </div><!-- /.row -->
                     </div><!-- /.navigation -->
@@ -52,26 +55,38 @@
         <div class="container">
             <div class="starting">
                 <div class="row">
-					<div class="col-md-6">
-                        <div class="banner-text">
-                             <h2 class="animation-box wow bounceIn animated"><strong class="strong">One touch for</strong><br>
-                            all needs</h2>
-                            <p>
-                                 Lucy has been downloaded and loved by over 10M+ people from 130 countries all over the world in last 3 months. Download this free app on your Android and iOS device. Reviews and ratings are much appreciated.
-                            </p>
-                            <a href="#" class="btn btn-download wow animated fadeInLeft">
+                	<div class="col-md-6 col-md-push-6">
+                        <!-- <img src="img/LUCY2.png" alt="LUCY" class="wow flipInY animated animated"> -->
+                        <video id="promo-vid" controls="controls" name="Video Name" src="./videos/promo-2.mp4" controls="" style="width:100%; margin-top:25%;" poster="./img/promo-2.png"></video>
+                    </div>
+					<div class="col-md-6 col-md-pull-6">
+                        <div class="banner-text text-center">
+
+                        	 <h1 class="strong" style="text-transform:capitalize; padding-left:25px;">Launching <br> October 2018</h1>
+                             <h2 class="animation-box wow bounceIn animated strong"><em>"A Peer-to-Peer Network</em></h2>
+                             <h2 class="animation-box wow bounceIn animated strong" style="margin:-3px 0 "><em>for</em></h2>
+                            <h2 class="animation-box wow bounceIn animated strong" style="margin-top:5px;"><em>assignment assistance"</em></h2></strong>
+                            <ul style="list-style-type: point; color:white; font-size:2rem;">
+                            	<li>Get assistance on assignments</li>
+                            	<li>Get paid to assist others on assignments</li>
+                            </ul>
+                            <!-- <p style="margin:0;">Get assistance on assignments from certified assistants</p>
+                            <p style="margin:0;">or</p>
+                            <p  style="margin:0;">Get paid to assist others on assignments</p> -->
+                            <label for="email" style="color:white;">Sign Up to be notified when we launch</label>
+                            <input type="text" name="email" style="text-align:left; width:70%; font-size:2rem; height:40px; border-top-left-radius:10px; padding-left:15px;border-bottom-left-radius:10px; " placeholder="Enter Email">
+                            <button style="height:40px; padding-left:20px; padding-right:20px; margin-left:-5px; border-top-right-radius:10px; border-bottom-right-radius:10px; background-color: #4bc987; color:white; border-color:#4bc987;">Submit</button>                   
+                            <!-- <a href="#" class="btn btn-download wow animated fadeInLeft">
                             <i class="fa fa-android pull-left"></i>
                             <strong>Get it on</strong>
                             <br/>Google Play </a>
                             <a href="#" class="btn btn-download wow animated fadeInRight">
                             <i class="fa fa-apple pull-left"></i>
                             <strong>Get it on</strong>
-                            <br/>App store </a>   
+                            <br/>App store </a>    -->
                         </div> <!-- /.banner-text -->
                     </div>
-                    <div class="col-md-6">
-                        <!-- <img src="img/LUCY2.png" alt="LUCY" class="wow flipInY animated animated"> -->
-                    </div>
+                    
                     
                 </div>
             </div>
@@ -84,13 +99,11 @@
     <!-- HHHHHHHHHHHHHHHHHH        Video          HHHHHHHHHHHHHHHH -->
     <div id="video" class="wrapper">
         <div class="container">
-            <h2 class="animation-box wow bounceIn animated">FEATURES</h2>
+            <h2 class="animation-box wow bounceIn animated">How it Works</h2>
             <div class="virticle-line"></div>
             <div class="circle"></div>
-            <img src="img/feature.png" alt="feature" class="video img-responsive animation-box wow animated bounceInDown">
-            <p>
-                Use Lucy – the Best Responsive App Landing Page to embed your game’s or app’s review videos.
-            </p>
+            <!-- <img src="img/feature.png" alt="feature" class="video img-responsive animation-box wow animated bounceInDown"> -->
+           	<video class="video img-responsive animation-box wow animated bounceInDown" id="promo-vid" controls="controls" name="Video Name" src="./videos/promo.mp4" controls="" style="width:70%;" poster="./img/promo.png"></video>
         </div> <!-- /.container -->
     </div> <!-- /#video -->
 
@@ -101,34 +114,38 @@
 
             <div class="row">
                 <div class="col-sm-4">
+                	<h3 class="wow fadeInLeft animated text-center" style="font-size:3.5rem;">Get Assistance</h3>
+                	<hr style="color:#a6a6a6;">
                     <ul class="item-list-right item-list-big">
                         <li class="wow fadeInLeft animated"> <i class="fa fa-film"></i> 
-                            <h3>Responsive design</h3>
-                            <p>Your project looks great on any device. Content can be easily read and a user understands freely what you wanted.</p>
-                        </li>
-                        <li class="wow fadeInLeft animated"> <i class="fa fa-bolt"></i> 
-                            <h3>6 Color schemes</h3>
-                            <p>The set of ready made CSS files with different color schemes will help you in quick landing’s adaptation according to your benchmark style.</p>
+                            <h3>Upload Assignment</h3>
+                            <p>Snap up to three pictures of your assignment, add details, and upload it to the marketplace.</p>
                         </li>
                         <li class="wow fadeInLeft animated"> <i class="fa fa-heart"></i> 
-                            <h3>PSD Is Included </h3>
-                            <p>The graphic source file in PSD format is included in the archive.</p>
+                            <h3>Select Assistant</h3>
+                            <p>Accept an offer from an assistant to help with your assignment, and pay using Stripe's secure system.</p>
+                        </li>
+                        <li class="wow fadeInLeft animated"> <i class="fa fa-bolt"></i> 
+                            <h3>Receive Assistance</h3>
+                            <p>Receive assistance on your assignment, and leave your assistant a review.</p>
                         </li>
                     </ul>
                 </div>
                 <div class="col-sm-4 col-sm-push-4">
+                	<h3 class="wow fadeInRight animated text-center" style="font-size:3.5rem;">Assistance Others</h3>
+                	<hr style="color:#a6a6a6;">
                     <ul class="item-list-left item-list-big">
                         <li class="wow fadeInRight animated"> <i class="fa fa-life-ring"></i>
-                            <h3>Well Documentation</h3>
-                            <p>LUCY is shipped with well documented moduler codes. Meaningfull Comments in code will help you to customize it easily.</p>
+                            <h3>Find Assignments</h3>
+                            <p>Search through our peer to peer marketplace, and make offers to assist others on assignments.</p>
                         </li>
                         <li class="wow fadeInRight animated"> <i class="fa fa-lock"></i>
-                            <h3>Easily Customizable</h3>
-                            <p>LUCY is easy to customize. No heavy coding is required to customize it with your real contents.</p>
+                            <h3>Assist User</h3>
+                            <p>When a user accepts your offer, assist them on their assignment, and submit to our team for review.</p>
                         </li>
                         <li class="wow fadeInRight animated"> <i class="fa fa-star"></i>
-                            <h3>Future Support</h3>
-                            <p>We will update LUCY and fix bugs if you found one for a long time.</p>
+                            <h3>Finishing Up</h3>
+                            <p>Once we verify the assignment, it is sent to the user, and you'll receive an assistance review.</p>
                         </li>
                     </ul>
                 </div>
@@ -144,7 +161,7 @@
     </section> <!-- /#bigfeatures -->
 
     <!-- HHHHHHHHHHHHHHHHHH        Speciality         HHHHHHHHHHHHHHHH -->
-    <div id="speciality" class="wrapper">
+    <!-- <div id="speciality" class="wrapper">
         <div class="container">
             <h2 class="animation-box wow bounceIn animated">SPECIALITY</h2>
             <div class="virticle-line"></div>
@@ -177,13 +194,12 @@
                         Your project looks great on any device. Content can be easily read and a user understands freely.
                     </p>
                 </div>
-            </div> <!-- /.row -->
-        </div> <!-- /.container -->
-    </div> <!-- /#speciality -->
-
+            </div> 
+        </div> 
+    </div>  -->
 
     <!-- HHHHHHHHHHHHHHHHHH        Features         HHHHHHHHHHHHHHHH -->
-    <section id="features" class="wrapper features">
+    <!-- <section id="features" class="wrapper features">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-sm-6 wow animated fadeInLeft">
@@ -205,9 +221,9 @@
                             <li class="li"><i class="fa fa-chevron-right"></i> White Balance</li>
                             <li class="li"><i class="fa fa-chevron-right"></i> ISO Levels</li>
                         </ul>
-                    </div> <!-- .features-list -->
+                    </div>
                 </div>
-            </div> <!-- /.row -->
+            </div>
             <div class="row">
                 <div class="col-md-6 col-sm-6 wow animated fadeInLeft">
                     <div class="features-list-left">
@@ -225,19 +241,19 @@
                             <li class="li">White Balance <i class="fa fa-chevron-left"></i></li>
                             <li class="li">ISO Levels <i class="fa fa-chevron-left"></i></li>
                         </ul>
-                    </div> <!-- .features-list -->
+                    </div>
                 </div>
                 <div class="col-md-6 col-sm-6 wow animated fadeInRight">
                     <img src="img/mb2v.png" alt="" class="pull-left right-img">
                 </div>
-            </div> <!-- /.row -->
-        </div> <!-- /.container -->
-    </section> <!-- /#features -->
+            </div>
+        </div>
+    </section> -->
 
 
     <!-- HHHHHHHHHHHHHHHHHH      Screenshots    HHHHHHHHHHHHHHHH -->
 
-    <section id="gallery" class="wrapper">
+    <!-- <section id="gallery" class="wrapper">
         <div class="container">
             <h2 class="animation-box wow bounceIn animated">SCREENSHOTS</h2>
             <div class="virticle-line"></div>
@@ -283,17 +299,17 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <!-- HHHHHHHHHHHHHHHHHHHH    Testimonial    HHHHHHHHHHHHHHHHHHHHHH -->
-     <section id="testimonial" class="wrapper">
+     <!-- <section id="testimonial" class="wrapper">
             <div class="container">
                 <div class="row main_content">
                     <div class="col-md-8 col-md-offset-2">
                         <div id="client-speech" class="owl-carousel owl-theme">
                             <div class="item wow animated bounceInUp animated">
-                                <!-- <img class="img-circle img-responsive center-block test-img" src="img/test1.png" alt="text"> -->
+                                <img class="img-circle img-responsive center-block test-img" src="img/test1.png" alt="text"> 
                                 <p class="client-comment text-center">
                                    Good camera This is a good camera app with lots of features. Got it to replace the one that came with the phone, one which froze up often. It is a little slow to boot up, and that keeps it from getting five stars.
                                 </p>
@@ -302,7 +318,7 @@
                                 </div>
                             </div>
                             <div class="item wow animated bounceInUp animated">
-                                <!-- <img class="img-circle img-responsive center-block test-img" src="img/test2.png" alt="text"> -->
+                                 <img class="img-circle img-responsive center-block test-img" src="img/test2.png" alt="text"> 
                                 <p class="client-comment text-center">
                                    Good camera This is a good camera app with lots of features. Got it to replace the one that came with the phone, one which froze up often. It is a little slow to boot up, and that keeps it from getting five stars.
                                 </p>
@@ -311,7 +327,7 @@
                                 </div>
                             </div>
                             <div class="item wow animated bounceInUp animated">
-                                <!-- <img class="img-circle img-responsive center-block test-img" src="img/test3.png" alt="text"> -->
+                                <img class="img-circle img-responsive center-block test-img" src="img/test3.png" alt="text">
                                 <p class="client-comment text-center">
                                    Good camera This is a good camera app with lots of features. Got it to replace the one that came with the phone, one which froze up often. It is a little slow to boot up, and that keeps it from getting five stars.
                                 </p>
@@ -323,7 +339,7 @@
                     </div>
                 </div>
             </div>  
-        </section>  <!-- clients -->
+        </section> -->  <!-- clients -->
 
     <!-- HHHHHHHHHHHHHHHHHH      Development Team      HHHHHHHHHHHHHHHH -->
 
@@ -440,7 +456,7 @@
     <section id="contact" class="wrapper">
         <div  class="container">
             <div class="row">
-                <div class="col-md-3 contact-item col-sm-6 col-xs-12 wow animated fadeInLeft">
+                <!-- <div class="col-md-3 contact-item col-sm-6 col-xs-12 wow animated fadeInLeft">
                     <i class="fa fa-map-marker"></i>
                     <h3>Address</h3>
                     <p class="contact">
@@ -463,38 +479,37 @@
                         Office: 2148-287-8300 <br>
                         Home: 2528-782-8200
                     </p>
-                </div>
-                <div class="col-md-3 contact-item col-sm-6 col-xs-12 wow animated fadeInRight">
+                </div> -->
+                <div class="col-md-3 col-md-push-4 contact-item col-sm-6 col-xs-12 wow animated fadeInRight">
                     <i class="fa fa-envelope"></i>
                     <h3>Email Address</h3>
                     <p class="contact">
-                        <a href="mailto:info@themewagon.com">info@themewagon.com</a> <br>
-                        <a href="www.themewagon.com">www.themewagon.com</a>
+                        <a href="mailto:info@themewagon.com">help@peerassistant.com</a> <br>
                     </p>
                 </div>
             </div> <!-- /.row -->
-            <form class="row form wrapper">
+            <!-- <form class="row form wrapper">
                 <h3>Leave A Message</h3>
                 <div class="col-sm-4 col-xs-12 form-group">
                     <label class="sr-only">Name</label>
                     <input name="name" class="form-control" type="text" placeholder="First Name">
-                </div> <!-- /.form-group -->
+                </div>
                 <div class="col-sm-4 col-xs-12 form-group">
                     <label class="sr-only">Email</label>
                     <input name="email" class="form-control" type="email" placeholder="Email address">
-                </div> <!-- /.form-group -->
+                </div>
                 <div class="col-sm-4 col-xs-12 form-group">
                     <label class="sr-only">Website</label>
                     <input name="website" class="form-control" type="text" placeholder="Your website">
-                </div> <!-- /.form-group -->
+                </div> 
                 <div class="row">
                     <div class="col-md-12 col-xs-12 form-group">
                         <label class="sr-only">Message</label>
                         <textarea class="message form-control" placeholder="Write message"></textarea>
-                    </div> <!-- /.form-group -->
+                    </div> 
                     <input class="btn btn-sub" type="submit" value="Send Message">
                 </div>
-            </form> <!-- /.row -->
+            </form>  -->
         </div> <!-- /.container -->
     </section> <!-- /#contact -->
 
@@ -503,21 +518,17 @@
     <section id="footer" class="wrapper">
         <div class="container text-center">
             <div class="footer-logo">
-                <h1 class="text-center animation-box wow bounceIn animated">lucy</h1>
+                <h1 class="text-center animation-box wow bounceIn animated">PeerAssistant</h1>
             </div>
             <ul class="social-icons text-center">
                 <li class="wow animated fadeInLeft facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li class="wow animated fadeInRight twitter"><a href="#"><i class="fa fa-twitter"></i></a>
                 <li class="wow animated fadeInLeft linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                <li class="wow animated fadeInRight googleplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                <li class="wow animated fadeInLeft github"><a href="#"><i class="fa fa-github"></i></a>
+                <li class="wow animated fadeInRight googleplus"><a href="#"><i class="fa fa-instagram"></i></a></li>
             </ul>
 
             <div class="copyright">
-                <div class="credits">
-                    Made With <i class="fa fa-heart"></i> by <a href="http://www.themewagon.com" target="_blank">ThemeWagon</a>
-                </div>
-                <div>©2015 Your Company, All Rights Reserved</div>
+                <div>©2018 Mitochondria LLC, All Rights Reserved</div>
             </div>
         </div><!-- container -->
     </section>
@@ -568,7 +579,7 @@
     </script>
     <script>
         $(document).ready(function(){
-
+		  // document.getElementById("promo-vid").controls = false; 
           var kawa = $('.top-bar');
           var back = $('#back-to-top');
           function scroll() {
